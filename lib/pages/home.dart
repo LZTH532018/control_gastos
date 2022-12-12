@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xffF7F8FB),
+        backgroundColor: Color.fromARGB(255, 247, 248, 251),
         elevation: 0,
         leading: Icon(
           Icons.menu,
@@ -57,6 +57,18 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+        shape: const CircularNotchedRectangle(),
+        child: Container(height: 50.0),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => setState(() {
+          "_count++";
+        }),
+        tooltip: 'Increment Counter',
+        child: const Icon(Icons.add),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
