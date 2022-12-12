@@ -21,24 +21,17 @@ class ExpInController extends GetxController {
 
   void createInitialData() {
     expenditureIncome = [
-      {"name": "Renta", "type": "Gasto", "subtype": "Vivienda", "amount": 4200},
+      {
+        "name": "Renta Cuarto",
+        "type": "Gasto",
+        "subtype": "Vivienda",
+        "amount": 4500
+      },
       {
         "name": "Comida",
         "type": "Gasto",
         "subtype": "Alimentos",
-        "amount": 3000
-      },
-      {
-        "name": "Empleo",
-        "type": "Ingreso",
-        "subtype": "Trabajo",
-        "amount": 8000
-      },
-      {
-        "name": "Taquería",
-        "type": "Ingreso",
-        "subtype": "Negocio",
-        "amount": 3000
+        "amount": 500
       },
     ];
   }
